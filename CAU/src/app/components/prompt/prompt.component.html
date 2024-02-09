@@ -1,0 +1,18 @@
+<div class="prompt-container">
+    <div class="prompt-header">
+      <span class="prompt-title">PROMPT</span>
+      <span class="language-select-container">
+        <label for="languageSelect">Choose a language:</label>
+        <select [(ngModel)]="selectedLanguage" id="languageSelect" class="language-dropdown">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="csharp">C#</option>
+        </select>
+    </span>
+    </div>
+    <textarea [(ngModel)]="textAreaContent" id="messages" class="prompt-input" placeholder="Enter your question here..." rows="3"></textarea>
+    <div class="button-container">
+      <button class="clear-button">Clear</button>
+      <button class="submit-button" (click)="sendDescription()">Submit</button>
+    </div>
+  </div>

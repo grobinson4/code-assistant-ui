@@ -3,7 +3,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { from,Observable, BehaviorSubject } from 'rxjs';
 import { Router, ActivatedRoute } from '@angular/router';
 import OpenAI from "openai";
-const openai = new OpenAI({ apiKey: "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", dangerouslyAllowBrowser: true});
+import { environment } from '../../environments/environment';
+const openai = new OpenAI({ apiKey: environment.openaiApiKey, dangerouslyAllowBrowser: true});
+
 
 
 @Injectable({

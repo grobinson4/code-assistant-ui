@@ -21,8 +21,9 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     width: 100%;
-  max-width: 1200px; /* Maximum width of the content area */
+  max-width: 1300px; /* Maximum width of the content area */
   padding: 1rem;
+
   }
   
   .prompt-section,
@@ -36,6 +37,7 @@
     .response-section {
       flex: 1; /* Each section takes an equal amount of space */
       max-width: calc(50% - 1rem); /* Subtract margin */
+      
     }
   }
   
